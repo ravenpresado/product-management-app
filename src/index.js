@@ -838,10 +838,16 @@ function App() {
           </>
         )}
 
-        <section style={styles.panel}>
-          <h2 style={{ marginTop: 0 }}>
-            Shopping Cart ({cartQuantity} items)
-          </h2>
+              <section style={styles.panel}>
+                <h2 style={{
+                  marginTop: 0,
+                  fontFamily: "Georgia, serif",
+                  fontWeight: "normal",
+                  letterSpacing: 1,
+                  color: "#292521"
+                }}>
+                  Shopping Cart ({cartQuantity} items)
+                </h2>
 
           {cartItems.length === 0 ? (
             <p style={{ color: "#64748b" }}>
@@ -859,7 +865,10 @@ function App() {
                   }}
                 >
                   <thead>
-                    <tr style={{ background: "#f1f5f9" }}>
+                  <tr style={{
+                        background: "#F5F0E8",
+                        color: "#A8875A"
+                      }}>
                       {["Product", "Price", "Quantity", "Subtotal", "Action"].map(
                         (heading) => (
                           <th
@@ -948,7 +957,12 @@ function App() {
                   Total items: {cartQuantity}
                 </p>
 
-                <h2 style={{ color: "#4f46e5" }}>
+                <h2 style={{
+                  color: "#A8875A",
+                  fontFamily: "Georgia, serif",
+                  fontWeight: "normal",
+                  fontSize: 27
+                }}>
                   Overall Total: {money(cartTotal)}
                 </h2>
               </div>
