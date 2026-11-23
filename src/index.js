@@ -466,12 +466,12 @@ function App() {
     style={{
       ...styles.panel,
       borderRadius: 4,
-      borderTop: "3px solid #A8875A",
+      borderTop: "3px solid #E9AEBB", 
       boxShadow: "0 5px 18px rgba(41, 37, 33, 0.05)"
     }}
   >
     <div style={{
-      color: "#A8875A",
+      color: "#C9788C",
       fontSize: 11,
       letterSpacing: 1.5,
       fontWeight: 600
@@ -484,7 +484,7 @@ function App() {
       fontSize: 25,
       fontFamily: "Georgia, serif",
       fontWeight: "normal",
-      color: "#292521"
+      color: "#573B46"
     }}>
       {value}
     </h2>
