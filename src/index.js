@@ -331,24 +331,56 @@ function App() {
 
   return (
     <div style={styles.page}>
-      <header style={styles.header}>
-        <div style={{ maxWidth: 1200, margin: "auto" }}>
+      
+<header style={styles.header}>
+  <div
+    style={{
+      maxWidth: 1200,
+      margin: "auto",
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      flexWrap: "wrap",
+      gap: 20
+    }}
+  >
+    <div>
+      <h1 style={{
+        margin: "10px 0 5px",
+        fontSize: 38,
+        fontFamily: "Georgia, serif",
+        fontWeight: "normal",
+        letterSpacing: 5
+      }}>
+        RAVÉLLE
+      </h1>
 
-        <h1 style={{
-            margin: "10px 0 5px",
-            fontSize: 38,
-            fontFamily: "Georgia, serif",
-            fontWeight: "normal",
-            letterSpacing: 5
-          }}>
-            RAVÉLLE
-          </h1>
+      <p style={{ margin: 0, color: "#D6C3A5" }}>
+        FASHION • FOOTWEAR • ACCESSORIES
+      </p>
+    </div>
 
-          <p style={{ margin: 0, color: "#D6C3A5" }}>
-            FASHION • FOOTWEAR • ACCESSORIES
-          </p>
-        </div>
-      </header>
+    <button
+      onClick={() =>
+        document.getElementById("shopping-cart").scrollIntoView({
+          behavior: "smooth"
+        })
+      }
+      style={{
+        background: "transparent",
+        border: "1px solid #D6C3A5",
+        color: "#D6C3A5",
+        padding: "12px 20px",
+        cursor: "pointer",
+        fontSize: 14,
+        letterSpacing: 1
+      }}
+    >
+      🛍 SHOPPING BAG ({cartQuantity})
+    </button>
+  </div>
+</header>
+
 
       <main style={styles.container}>
         <div
@@ -838,7 +870,7 @@ function App() {
           </>
         )}
 
-              <section style={styles.panel}>
+              <section id="shopping-cart" style={styles.panel}>
                 <h2 style={{
                   marginTop: 0,
                   fontFamily: "Georgia, serif",
