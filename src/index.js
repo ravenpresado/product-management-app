@@ -360,6 +360,7 @@ function App() {
       </p>
     </div>
 
+    
     <button
       onClick={() =>
         document.getElementById("shopping-cart").scrollIntoView({
@@ -367,17 +368,61 @@ function App() {
         })
       }
       style={{
+        display: "flex",
+        alignItems: "center",
+        gap: 12,
         background: "transparent",
-        border: "1px solid #D6C3A5",
+        border: "1px solid #A8875A",
         color: "#D6C3A5",
         padding: "12px 20px",
         cursor: "pointer",
-        fontSize: 14,
-        letterSpacing: 1
+        fontSize: 12,
+        letterSpacing: 2,
+        fontWeight: 600,
+        transition: "all 0.3s ease"
+      }}
+      onMouseOver={(event) => {
+        event.currentTarget.style.background = "#A8875A";
+        event.currentTarget.style.color = "#FFFFFF";
+      }}
+      onMouseOut={(event) => {
+        event.currentTarget.style.background = "transparent";
+        event.currentTarget.style.color = "#D6C3A5";
       }}
     >
-      🛍 SHOPPING BAG ({cartQuantity})
+      <svg
+        width="21"
+        height="21"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M5 8h14l1 13H4L5 8z" />
+        <path d="M9 8V6a3 3 0 0 1 6 0v2" />
+      </svg>
+
+      <span
+        style={{
+          minWidth: 21,
+          height: 21,
+          borderRadius: "50%",
+          background: "#D6C3A5",
+          color: "#171717",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontSize: 11,
+          fontWeight: 700,
+          letterSpacing: 0
+        }}
+      >
+        {cartQuantity}
+      </span>
     </button>
+
   </div>
 </header>
 
