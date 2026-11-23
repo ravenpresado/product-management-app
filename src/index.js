@@ -112,17 +112,19 @@ const emptyForm = {
   image: ""
 };
 
+
 const styles = {
   page: {
     minHeight: "100vh",
-    background: "#f4f6fb",
-    color: "#172033",
+    background: "#F5F0E8",
+    color: "#292521",
     fontFamily: "Arial, sans-serif"
   },
   header: {
-    background: "#172554",
-    color: "white",
-    padding: "24px 5%"
+    background: "#171717",
+    color: "#FFFFFF",
+    padding: "30px 5%",
+    borderBottom: "4px solid #D6C3A5"
   },
   container: {
     maxWidth: 1200,
@@ -130,19 +132,19 @@ const styles = {
     padding: "28px 20px"
   },
   panel: {
-    background: "white",
-    border: "1px solid #e2e8f0",
+    background: "#FFFFFF",
+    border: "1px solid #E8E0D5",
     borderRadius: 14,
     padding: 22,
     marginBottom: 24,
-    boxShadow: "0 3px 12px rgba(15,23,42,0.04)"
+    boxShadow: "0 4px 15px rgba(0,0,0,0.04)"
   },
   input: {
     width: "100%",
     boxSizing: "border-box",
     padding: 11,
     marginTop: 7,
-    border: "1px solid #cbd5e1",
+    border: "1px solid #D6C3A5",
     borderRadius: 7,
     fontSize: 14
   },
@@ -159,14 +161,15 @@ const styles = {
     fontWeight: 600
   },
   primary: {
-    background: "#4f46e5",
-    color: "white"
+    background: "#292521",
+    color: "#FFFFFF"
   },
   secondary: {
-    background: "#e2e8f0",
-    color: "#172033"
+    background: "#E8E0D5",
+    color: "#292521"
   }
 };
+
 
 function App() {
   const [products, setProducts] = useState(initialProducts);
@@ -335,11 +338,11 @@ function App() {
           </div>
 
           <h1 style={{ margin: "10px 0 5px", fontSize: 30 }}>
-            Product Management App
+          RAVÉLLE
           </h1>
 
-          <p style={{ margin: 0, color: "#dbeafe" }}>
-            Manage products, inventory, and shopping cart totals.
+          <p style={{ margin: 0, color: "#D6C3A5" }}>
+            FASHION • FOOTWEAR • ACCESSORIES
           </p>
         </div>
       </header>
@@ -526,10 +529,10 @@ function App() {
                       onChange={updateForm}
                       required
                     >
-                      <option value="Electronics">Electronics</option>
+                      <option value="Men's Clothing">Men's Clothing</option>
+                      <option value="Women's Clothing">Women's Clothing</option>
+                      <option value="Shoes and Sandals">Shoes and Sandals</option>
                       <option value="Accessories">Accessories</option>
-                      <option value="Stationery">Stationery</option>
-                      <option value="Other">Other</option>
                     </select>
                   </label>
 
@@ -947,7 +950,7 @@ function App() {
             padding: "8px 0 24px"
           }}
         >
-          CCDI Sorsogon · Product Management App · Pre-Final Exam Project
+          CCDI Sorsogon · RAVÉLLE Fashion Store · Pre-Final Exam Project
         </footer>
       </main>
     </div>
