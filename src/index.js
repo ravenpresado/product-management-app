@@ -116,7 +116,7 @@ const emptyForm = {
 const styles = {
   page: {
     minHeight: "100vh",
-    background: "#F5F0E8",
+    background: "#F5E9EA",
     color: "#292521",
     fontFamily: "Arial, sans-serif"
   },
@@ -132,8 +132,8 @@ const styles = {
     padding: "28px 20px"
   },
   panel: {
-    background: "#E8D5B5",
-    border: "1px solid #C6A875",
+    background: "#F5E9EA",
+    border: "1px solid #E8CDD1",
     borderRadius: 14,
     padding: 22,
     marginBottom: 24,
@@ -161,7 +161,7 @@ const styles = {
     fontWeight: 600
   },
   primary: {
-    background: "#A8875A",
+    background: "#8B5360",
     color: "#FFFFFF"
   },
   secondary: {
@@ -372,7 +372,7 @@ function App() {
         alignItems: "center",
         gap: 12,
         background: "transparent",
-        border: "1px solid #A8875A",
+        border: "1px solid ",
         color: "#D6C3A5",
         padding: "12px 20px",
         cursor: "pointer",
