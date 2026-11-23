@@ -1,41 +1,99 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
+
 const initialProducts = [
   {
     id: 1,
-    name: "Wireless Mouse",
-    category: "Electronics",
-    description: "A wireless mouse for everyday computer use.",
-    specifications: "Wireless, USB receiver, ergonomic design",
-    rating: 4.5,
-    price: 599,
-    stock: 10,
-    image: "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500"
+    name: "Classic Men's Polo Shirt",
+    category: "Men's Clothing",
+    description: "A comfortable and stylish polo shirt for everyday wear.",
+    specifications: "Cotton fabric, regular fit, available in different sizes",
+    rating: 4.8,
+    price: 499,
+    stock: 15,
+    image: "https://images.unsplash.com/photo-1625910513413-5fc3b3a6d9b5?w=500"
   },
   {
     id: 2,
-    name: "Mechanical Keyboard",
-    category: "Accessories",
-    description: "A mechanical keyboard for typing and gaming.",
-    specifications: "USB connection, mechanical keys, full-size layout",
-    rating: 4.8,
-    price: 1899,
-    stock: 3,
-    image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500"
+    name: "Men's Casual Jeans",
+    category: "Men's Clothing",
+    description: "Classic denim jeans suitable for casual outfits.",
+    specifications: "Denim fabric, straight fit, zipper closure",
+    rating: 4.7,
+    price: 899,
+    stock: 12,
+    image: "https://images.unsplash.com/photo-1542272604-787c3835535d?w=500"
   },
   {
     id: 3,
-    name: "Notebook",
-    category: "Stationery",
-    description: "A notebook for school notes and daily writing.",
-    specifications: "A5 size, lined pages, soft cover",
-    rating: 4.2,
-    price: 55,
-    stock: 40,
-    image: "https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=500"
+    name: "Elegant Women's Dress",
+    category: "Women's Clothing",
+    description: "An elegant dress perfect for parties and special occasions.",
+    specifications: "Soft fabric, elegant design, available in different sizes",
+    rating: 4.9,
+    price: 999,
+    stock: 8,
+    image: "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=500"
+  },
+  {
+    id: 4,
+    name: "Women's Casual Blouse",
+    category: "Women's Clothing",
+    description: "A fashionable blouse for casual and everyday outfits.",
+    specifications: "Lightweight fabric, short sleeves, comfortable fit",
+    rating: 4.6,
+    price: 450,
+    stock: 4,
+    image: "https://images.unsplash.com/photo-1564257577-1e9a8e7e6f3b?w=500"
+  },
+  {
+    id: 5,
+    name: "Classic White Sneakers",
+    category: "Shoes & Sandals",
+    description: "Versatile sneakers for everyday activities.",
+    specifications: "Rubber sole, lace-up closure, unisex style",
+    rating: 4.8,
+    price: 1299,
+    stock: 10,
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
+  },
+  {
+    id: 6,
+    name: "Women's Casual Sandals",
+    category: "Shoes & Sandals",
+    description: "Comfortable sandals for everyday use.",
+    specifications: "Lightweight sole, adjustable straps, casual design",
+    rating: 4.5,
+    price: 599,
+    stock: 3,
+    image: "https://images.unsplash.com/photo-1562273138-f46be4ebdf33?w=500"
+  },
+  {
+    id: 7,
+    name: "Women's Fashion Handbag",
+    category: "Accessories",
+    description: "A stylish handbag for everyday essentials.",
+    specifications: "Synthetic leather, zipper closure, shoulder strap",
+    rating: 4.7,
+    price: 799,
+    stock: 9,
+    image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=500"
+  },
+  {
+    id: 8,
+    name: "Classic Wrist Watch",
+    category: "Accessories",
+    description: "A fashionable wristwatch for everyday outfits.",
+    specifications: "Analog display, adjustable strap, classic design",
+    rating: 4.6,
+    price: 1099,
+    stock: 6,
+    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
   }
 ];
+
+
 
 const money = (amount) =>
   new Intl.NumberFormat("en-PH", {
@@ -45,7 +103,7 @@ const money = (amount) =>
 
 const emptyForm = {
   name: "",
-  category: "Electronics",
+  category: "Men's Clothing",
   description: "",
   specifications: "",
   rating: "",
