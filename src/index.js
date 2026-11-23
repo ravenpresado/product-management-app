@@ -173,6 +173,22 @@ const styles = {
   }
 };
 
+function StockBadge({ stock }) {
+  return (
+    <span
+      style={{
+        background: stock < 5 ? "#F8DDE3" : "#FCEEF1",
+        color: stock < 5 ? "#A33F5A" : "#573B46",
+        padding: "4px 8px",
+        borderRadius: 20,
+        fontSize: 11,
+        fontWeight: 700
+      }}
+    >
+      {stock < 5 ? "Low Stock" : "In Stock"}
+    </span>
+  );
+}
 
 function App() {
   const [products, setProducts] = useState(initialProducts);
@@ -639,7 +655,7 @@ function App() {
                     >
                       <option value="Men's Clothing">Men's Clothing</option>
                       <option value="Women's Clothing">Women's Clothing</option>
-                      <option value="Shoes and Sandals">Shoes and Sandals</option>
+                      <option value="Shoes & Sandals">Shoes & Sandals</option>
                       <option value="Accessories">Accessories</option>
                     </select>
                   </label>
@@ -817,7 +833,7 @@ function App() {
                               fontWeight: 700
                             }}
                           >
-                            {product.stock < 5 ? "Low Stock" : "In Stock"}
+                            <StockBadge stock={product.stock} />
                           </span>
                         </div>
 
@@ -847,7 +863,10 @@ function App() {
                         <p style={{ fontSize: 13 }}>
                           Available: {product.stock}
                         </p>
-
+                        <p style={{ fontSize: 13, color: "#573B46" }}>
+                          Product Subtotal:{" "}
+                          <strong>{money(product.price * product.stock)}</strong>
+                        </p>
                         <button
                           style={buttonStyle("#e0e7ff", "#3730a3")}
                           onClick={() => openDetails(product)}
