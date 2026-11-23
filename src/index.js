@@ -132,12 +132,12 @@ const styles = {
     padding: "28px 20px"
   },
   panel: {
-    background: "#FFFFFF",
-    border: "1px solid #E8E0D5",
+    background: "#E8D5B5",
+    border: "1px solid #C6A875",
     borderRadius: 14,
     padding: 22,
     marginBottom: 24,
-    boxShadow: "0 4px 15px rgba(0,0,0,0.04)"
+    boxShadow: "0 4px 15px rgba(0,0,0,0.06)"
   },
   input: {
     width: "100%",
@@ -161,7 +161,7 @@ const styles = {
     fontWeight: 600
   },
   primary: {
-    background: "#292521",
+    background: "#A8875A",
     color: "#FFFFFF"
   },
   secondary: {
@@ -564,7 +564,7 @@ function App() {
                     (cart[selectedProduct.id] || 0) >= selectedProduct.stock
                   }
                   style={{
-                    ...buttonStyle("#4f46e5"),
+                    ...buttonStyle("#A8875A"),
                     opacity:
                       (cart[selectedProduct.id] || 0) >=
                       selectedProduct.stock
@@ -773,7 +773,7 @@ function App() {
                         border: "1px solid #E8E0D5",
                         borderRadius: 4,
                         overflow: "hidden",
-                        background: "#FFFFFF",
+                        background: "#F5F0E8",
                         boxShadow: "0 5px 18px rgba(41, 37, 33, 0.06)",
                         transition: "transform 0.2s ease"
                       }}
@@ -1050,8 +1050,8 @@ function App() {
         <section
           style={{
             ...styles.panel,
-            background: "#fff7ed",
-            borderColor: "#fed7aa"
+            background: "#EDE5D8",
+              borderColor: "#D6C3A5"
           }}
         >
           <h3 style={{ marginTop: 0 }}>Inventory Alerts</h3>
