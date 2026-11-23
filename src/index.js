@@ -718,7 +718,7 @@ function App() {
                 <button
                   type="submit"
                   style={{
-                    ...buttonStyle("#4f46e5"),
+                    ...buttonStyle("#C9788C"),
                     marginTop: 18
                   }}
                 >
@@ -858,7 +858,7 @@ function App() {
                         <button
                           disabled={quantity >= product.stock}
                           style={{
-                            ...buttonStyle("#4f46e5"),
+                            ...buttonStyle("#C9788C"),
                             marginLeft: 6,
                             opacity: quantity >= product.stock ? 0.5 : 1
                           }}
