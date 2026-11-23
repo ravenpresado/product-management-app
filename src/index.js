@@ -360,20 +360,40 @@ function App() {
           }}
         >
           {[
-            ["Total Products", products.length],
-            ["Units in Stock", totalUnits],
-            ["Inventory Value", money(inventoryValue)],
-            ["Cart Total", money(cartTotal)]
-          ].map(([label, value]) => (
-            <div key={label} style={styles.panel}>
-              <div style={{ color: "#64748b", fontSize: 13 }}>
-                {label}
-              </div>
-              <h2 style={{ marginBottom: 0, fontSize: 24 }}>
-                {value}
-              </h2>
-            </div>
-          ))}
+  ["TOTAL PRODUCTS", products.length],
+  ["UNITS IN STOCK", totalUnits],
+  ["INVENTORY VALUE", money(inventoryValue)],
+  ["CART TOTAL", money(cartTotal)]
+].map(([label, value]) => (
+  <div
+    key={label}
+    style={{
+      ...styles.panel,
+      borderRadius: 4,
+      borderTop: "3px solid #A8875A",
+      boxShadow: "0 5px 18px rgba(41, 37, 33, 0.05)"
+    }}
+  >
+    <div style={{
+      color: "#A8875A",
+      fontSize: 11,
+      letterSpacing: 1.5,
+      fontWeight: 600
+    }}>
+      {label}
+    </div>
+
+    <h2 style={{
+      marginBottom: 0,
+      fontSize: 25,
+      fontFamily: "Georgia, serif",
+      fontWeight: "normal",
+      color: "#292521"
+    }}>
+      {value}
+    </h2>
+  </div>
+))}
         </div>
 
         {message && (
