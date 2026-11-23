@@ -334,8 +334,14 @@ function App() {
       <header style={styles.header}>
         <div style={{ maxWidth: 1200, margin: "auto" }}>
 
-          <h1 style={{ margin: "10px 0 5px", fontSize: 30 }}>
-          RAVÉLLE
+        <h1 style={{
+            margin: "10px 0 5px",
+            fontSize: 38,
+            fontFamily: "Georgia, serif",
+            fontWeight: "normal",
+            letterSpacing: 5
+          }}>
+            RAVÉLLE
           </h1>
 
           <p style={{ margin: 0, color: "#D6C3A5" }}>
@@ -478,7 +484,12 @@ function App() {
         ) : (
           <>
             <section style={styles.panel}>
-              <h2 style={{ marginTop: 0 }}>Add New Product</h2>
+            <h2 style={{
+              marginTop: 0,
+              fontFamily: "Georgia, serif",
+              fontWeight: "normal",
+              letterSpacing: 1
+            }}></h2>
 
               <p style={{ color: "#64748b", fontSize: 13 }}>
                 All fields are required. Use an image URL for the featured image.
@@ -708,7 +719,13 @@ function App() {
                           </span>
                         </div>
 
-                        <h3 style={{ marginBottom: 8 }}>
+                        <h3 style={{
+                          marginBottom: 8,
+                          fontFamily: "Georgia, serif",
+                          fontWeight: "normal",
+                          fontSize: 19,
+                          color: "#292521"
+                        }}>
                           {product.name}
                         </h3>
 
@@ -716,9 +733,14 @@ function App() {
                           ⭐ {product.rating} / 5
                         </div>
 
-                        <h3 style={{ color: "#4f46e5" }}>
-                          {money(product.price)}
-                        </h3>
+                        <h3 style={{
+                                color: "#A8875A",
+                                fontFamily: "Georgia, serif",
+                                fontWeight: "normal",
+                                fontSize: 20
+                              }}>
+                                {money(product.price)}
+                              </h3>
 
                         <p style={{ fontSize: 13 }}>
                           Available: {product.stock}
