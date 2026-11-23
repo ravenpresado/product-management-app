@@ -601,11 +601,14 @@ function App() {
           <>
             <section style={styles.panel}>
             <h2 style={{
-              marginTop: 0,
-              fontFamily: "Georgia, serif",
-              fontWeight: "normal",
-              letterSpacing: 1
-            }}></h2>
+                marginTop: 0,
+                fontFamily: "Georgia, serif",
+                fontWeight: "normal",
+                letterSpacing: 1,
+                color: "#573B46"
+              }}>
+                Add New Product
+              </h2>
 
               <p style={{ color: "#64748b", fontSize: 13 }}>
                 All fields are required. Use an image URL for the featured image.
@@ -821,18 +824,7 @@ function App() {
                             {product.category}
                           </span>
 
-                          <span
-                            style={{
-                              background:
-                                product.stock < 5 ? "#fee2e2" : "#dcfce7",
-                              color:
-                                product.stock < 5 ? "#b91c1c" : "#166534",
-                              padding: "4px 8px",
-                              borderRadius: 20,
-                              fontSize: 11,
-                              fontWeight: 700
-                            }}
-                          >
+                          <span>
                             <StockBadge stock={product.stock} />
                           </span>
                         </div>
