@@ -113,18 +113,19 @@ const emptyForm = {
 };
 
 
+
 const styles = {
   page: {
     minHeight: "100vh",
-    background: "#F5E9EA",
-    color: "#292521",
+    background: "#FFF5F6",
+    color: "#573B46",
     fontFamily: "Arial, sans-serif"
   },
   header: {
-    background: "#171717",
+    background: "#573B46",
     color: "#FFFFFF",
     padding: "30px 5%",
-    borderBottom: "4px solid #D6C3A5"
+    borderBottom: "4px solid #E9AEBB"
   },
   container: {
     maxWidth: 1200,
@@ -132,21 +133,23 @@ const styles = {
     padding: "28px 20px"
   },
   panel: {
-    background: "#F5E9EA",
-    border: "1px solid #E8CDD1",
+    background: "#FFFFFF",
+    border: "1px solid #F8DDE3",
     borderRadius: 14,
     padding: 22,
     marginBottom: 24,
-    boxShadow: "0 4px 15px rgba(0,0,0,0.06)"
+    boxShadow: "0 4px 15px rgba(87,59,70,0.06)"
   },
   input: {
     width: "100%",
     boxSizing: "border-box",
     padding: 11,
     marginTop: 7,
-    border: "1px solid #D6C3A5",
+    border: "1px solid #E9AEBB",
     borderRadius: 7,
-    fontSize: 14
+    fontSize: 14,
+    background: "#FFFFFF",
+    color: "#573B46"
   },
   label: {
     display: "block",
@@ -161,12 +164,12 @@ const styles = {
     fontWeight: 600
   },
   primary: {
-    background: "#8B5360",
+    background: "#C9788C",
     color: "#FFFFFF"
   },
   secondary: {
-    background: "#E8E0D5",
-    color: "#292521"
+    background: "#F8DDE3",
+    color: "#573B46"
   }
 };
 
