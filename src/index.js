@@ -673,10 +673,12 @@ function App() {
                     <article
                       key={product.id}
                       style={{
-                        border: "1px solid #e2e8f0",
-                        borderRadius: 12,
+                        border: "1px solid #E8E0D5",
+                        borderRadius: 4,
                         overflow: "hidden",
-                        background: "white"
+                        background: "#FFFFFF",
+                        boxShadow: "0 5px 18px rgba(41, 37, 33, 0.06)",
+                        transition: "transform 0.2s ease"
                       }}
                     >
                       <img
@@ -684,9 +686,9 @@ function App() {
                         alt={product.name}
                         style={{
                           width: "100%",
-                          height: 170,
+                          height: 220,
                           objectFit: "cover",
-                          background: "#f1f5f9",
+                          background: "#F5F0E8",
                           display: "block"
                         }}
                       />
