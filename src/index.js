@@ -333,9 +333,6 @@ function App() {
     <div style={styles.page}>
       <header style={styles.header}>
         <div style={{ maxWidth: 1200, margin: "auto" }}>
-          <div style={{ color: "#c7d2fe", fontSize: 12 }}>
-            COMPUTER COMMUNICATION DEVELOPMENT INSTITUTE
-          </div>
 
           <h1 style={{ margin: "10px 0 5px", fontSize: 30 }}>
           RAVÉLLE
